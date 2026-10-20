@@ -1,0 +1,13 @@
+// Applies preview-migrations/ to the Preview D1 database only.
+// Must match previews.d1_databases in wrangler.json.
+// npx wrangler d1 migrations apply PREVIEW_DB --remote --config wrangler.preview-migrations.jsonc
+{
+	"d1_databases": [
+		{
+			"binding": "PREVIEW_DB",
+			"database_id": "cfd771a7-2571-439b-9fa2-392abf52e981",
+			"database_name": "workshop-preview-db",
+			"migrations_dir": "preview-migrations"
+		}
+	]
+}
